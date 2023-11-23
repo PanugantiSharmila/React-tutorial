@@ -1,0 +1,69 @@
+npm install -g create-react-app
+npx create-react-app firstreactapp
+npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+
+  cd first-react-app
+  npm start
+
+  Props:passed to the component
+  state:managed within the component
+
+LIFECYCLE:
+Mounting:constructor,getDerivedStateFromProps,render and componentDidMount
+Updating:getDerivedStateFromProps,shouldComponentUpdate,render,getSnaoshotBeforeUpdate and componentDidUpdate
+Unmounting:componentWillUnmount
+Error Handling:
+-------------------------------------------------------------------------------
+Memo
+higher order Component that adds something and returns new enhanced component 
+similar to PureComponent works with functional component
+-------------------------------------------------------------------------
+Context:
+<ThemeContext.Consumer>
+
+{
+	theme=>{
+
+		return (<UserContext.Consumer>
+			{
+			user=>{
+				return <profile user={user} theme={theme}/>
+				} 
+			}
+			</UserContext.Consumer>
+		)}
+}
+</ThemeContext.Consumer>
+----------------------------------------------------------------------
+hooks
+lets hook into react features without writing class
+not in loops,consditions,or nested components ,only funtions
+useEffect
+useState
+useReducer
+UseContext
+useRef
+useMemo
+useCallback
+useTransition
+useDeferred value
+-----------------------------------------------
+deploy:
+yarn run build
+yarn global add serve
+npx serve -s build
+"homepage": "localhost:8080/reactapp",
+---------------------------------------------------
+ npm init --yes:package.json
